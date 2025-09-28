@@ -27,7 +27,7 @@ import chromadb
 import os
 from openai import OpenAI
 os.environ["GITHUB_TOKEN"] = "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"
-token = st.secrets["GITHUB_TOKEN"]
+token = os.environ["GITHUB_TOKEN"]
 endpoint = "https://models.github.ai/inference"
 model = "openai/gpt-4.1-mini"
 
