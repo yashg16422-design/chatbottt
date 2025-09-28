@@ -33,6 +33,7 @@ model = "openai/gpt-4.1-mini"
 client = OpenAI(
     base_url=endpoint,
     api_key=token,
+    device_map="auto",
 )
 
 CHROMA_PATH = "/chroma"
