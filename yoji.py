@@ -26,7 +26,7 @@ import streamlit as st
 import chromadb
 import os
 from openai import OpenAI
-os.environ["GITHUB_TOKEN"] = "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"
+os.environ["GITHUB_TOKEN"] = "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"
 token = os.environ["GITHUB_TOKEN"]
 endpoint = "https://models.github.ai/inference"
 model = "openai/gpt-4.1-mini"
