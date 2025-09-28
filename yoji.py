@@ -19,6 +19,7 @@ embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-b
 
 # !pip install -U langchain-community
 
+import streamlit as st
 
 # Commented out IPython magic to ensure Python compatibility.
 # %pip install -qU langchain-openai
@@ -142,7 +143,6 @@ text = "what is rainwater harvesting"
 final_model = query_rag(text)
 print(final_model)
 
-import streamlit as st
 # from langchain_openai.chat_models import ChatOpenAI
 
 st.title("🦜🔗 Quickstart App")
