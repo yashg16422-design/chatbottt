@@ -15,7 +15,7 @@ model = AutoModel.from_pretrained("google-bert/bert-base-cased")
 # Push the model to an organization with the name "my-finetuned-bert".
 # model.push_to_hub("huggingface/my-finetuned-bert")
 
-embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2",model_kwargs={'device': 'cpu'} )
+embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2" )
 
 # !pip install -U langchain-community
 
